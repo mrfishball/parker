@@ -12,7 +12,7 @@ gem 'pg', '~> 0.18.4'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'turbolinks', '~> 5'
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5.x'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -28,6 +28,7 @@ end
 
 group :test do
   gem 'capybara', '>= 2.15'
+  gem 'rspec_junit_formatter'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
