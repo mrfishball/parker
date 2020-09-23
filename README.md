@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/mrfishball/parker.svg?style=shield)](https://app.circleci.com/pipelines/github/mrfishball/parker?branch=master)
 
-A Web base valet parking system
+A valet parking system
 
 ## Setup
 
@@ -24,7 +24,7 @@ bundle install
 ```
 2. Setup database
 ```
-docker run -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres && bundle exec rails db:preapre
+docker run -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres && bundle exec rails db:prepare
 ```
 3. Start rails server
 ```
